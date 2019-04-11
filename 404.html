@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico"/>
+
+    <meta name="description" content="Lalit Jain is a Computer Science student at GGS Indraprastha University, New Delhi. He is also into Web Development and Machine Learning."/>
+
+    <meta name="og:title" property="og:title" content="Lalit Jain | Computer Science Student | Web Developer | Machine Learning Enthusiast">
+    <meta name="og:description" property="og:description" content="Lalit Jain is a Computer Science student at GGS Indraprastha University, New Delhi. He is also into Web Development and Machine Learning."/>
+    <meta property="og:url" content="http://lalitjain98.github.io/my-resume" />
+    <meta property="og:image" content="https://user-images.githubusercontent.com/26302274/55288861-7822ca80-53db-11e9-9f0c-9e816bd2da23.jpg" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@jainlalit138">
+    <meta name="twitter:title" content="Lalit Jain | Computer Science Student | Web Developer | Machine Learning Enthusiast">
+    <meta name="twitter:description" content="Lalit Jain is a Computer Science student at GGS Indraprastha University, New Delhi. He is also into Web Development and Machine Learning.">
+    <meta name="twitter:image" content="https://user-images.githubusercontent.com/26302274/55289210-08174300-53e1-11e9-9cc5-bca2cea75723.jpg">
+
+    <title>Single Page Apps for GitHub Pages</title>
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // https://github.com/rafrex/spa-github-pages
+      // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
+      // ----------------------------------------------------------------------
+      // This script takes the current url and converts the path and query
+      // string into just a query string, and then redirects the browser
+      // to the new url with only a query string and hash fragment,
+      // e.g. http://www.foo.tld/one/two?a=b&c=d#qwe, becomes
+      // http://www.foo.tld/?p=/one/two&q=a=b~and~c=d#qwe
+      // Note: this 404.html file must be at least 512 bytes for it to work
+      // with Internet Explorer (it is currently > 512 bytes)
+
+      // If you're creating a Project Pages site and NOT using a custom domain,
+      // then set segmentCount to 1 (enterprise users may need to set it to > 1).
+      // This way the code will only replace the route part of the path, and not
+      // the real directory in which the app resides, for example:
+      // https://username.github.io/repo-name/one/two?a=b&c=d#qwe becomes
+      // https://username.github.io/repo-name/?p=/one/two&q=a=b~and~c=d#qwe
+      // Otherwise, leave segmentCount as 0.
+      var segmentCount = 1;
+
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/' +
+        l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
