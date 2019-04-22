@@ -1,0 +1,166 @@
+$yellow-50 : #fffde7;
+$yellow-100 : #fff9c4;
+$yellow-200 : #fff59d;
+$yellow-300 : #fef075;
+$yellow-400 : #fceb55;
+$yellow-500 : #fae635;
+$yellow-600 : #fdd835;
+$yellow-700 : #fbc02d;
+$yellow-800 : #f9a825;
+$yellow-900 : #f57f17;
+
+$blue-25 : #e7e9ff;
+$blue-100 : #c4c8f3;
+$blue-200 : #9fa5e3;
+$blue-300 : #7a83d3;
+$blue-400 : #5f67c7;
+$blue-500 : #454cba;
+$blue-600 : #3f44b0;
+$blue-700 : #3739a4;
+$blue-800 : #2f2f98;
+$blue-900 : #231c82;
+
+
+$lime-green-50:  #f2fde4;
+$lime-green-100: #defabb;
+$lime-green-200: #c6f68d;
+$lime-green-300: #aaf255;
+$lime-green-500: #75e900;
+$lime-green-700: #41c300;
+$lime-green-900: #008b00;
+
+$red-50 : #fbb; 
+$red-100 : #fee; 
+
+$green-50 : #bfb;
+$blue-50: #bbf;
+$yellow-50: #ffb;
+
+$dark-900: #000000;
+$dark-800: #262626;
+$dark-700: #434343;
+$dark-600: #555555;
+
+$grey: #ccc;
+
+$viewport-height: 100vh;
+$sm-width: 576px;
+$md-width: 768px;
+
+body{
+  position: relative;
+}
+.about {
+  font-style: italic;
+  font-weight: 200;
+  text-align: center;
+  color: $lime-green-900;
+}
+.img-wrapper {
+  max-height: 12em;
+  overflow: hidden;
+}
+#header-img{
+  height:30px;
+  width: auto;
+}
+iframe {
+  max-height: 75vh;
+}
+.card{
+  margin: 10px;
+  width: 18em;
+}
+
+.contact-circle {
+  height: 10em;
+  width: 10em;
+  background-color: $blue-25;
+  border: 0.75em solid $blue-500;
+  border-radius: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: $blue-500;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.contact-circle:hover {
+  background-color: white; //$blue-200;
+  border-radius: 5em;
+  color: $blue-900;
+  text-decoration: none;
+}
+.contact-link {
+  margin: 0.5em;
+}
+
+// For larger screens
+@media (min-width: $md-width){
+  .page {
+    padding: 80px;
+  }    
+  .feature-heading {
+    text-align: left;
+  }
+  .feature-description {
+    text-align: left;
+  }
+}
+@media (max-width: $md-width){
+  .page {
+    padding: 80px 0px 40px 0px;
+  }
+  .feature-heading {
+    text-align: center;
+  }
+  .feature-description {
+    text-align: justify;
+  }
+}
+
+#main {
+  height: $viewport-height;
+  background-color: $blue-50;
+
+  #welcome-section{
+    min-height: $viewport-height;
+    background-color: $yellow-50;
+    //background-image: linear-gradient($green-50, $yellow-50);
+  }
+  #about{
+    min-height: $viewport-height;
+    background-color: $red-50;
+    //background-image: linear-gradient($yellow-50, $red-50);
+  }
+  #projects{
+    min-height: $viewport-height;
+    background-color: $green-50;
+    //background-image: linear-gradient($red-50, $blue-50);
+  }
+  #contact{
+    min-height: $viewport-height;
+    background-color: $blue-50;
+    //background-image: linear-gradient($blue-50, $yellow-50);
+  }
+}
+.icon {
+  color: $yellow-900;
+  margin: 10px;
+  padding: 10px;
+}
+footer {
+  display: flex;
+  border-top: 2px solid $dark-700;
+  //margin: 10px;
+  padding: 10px 10px 10px 10px;
+  min-height: 60px;
+  .line{
+    background-color: $grey;
+  }
+  
+}
+
